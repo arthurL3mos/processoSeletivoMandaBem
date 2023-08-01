@@ -1,0 +1,135 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    background-color: grey;
+}
+
+body {
+    background-color: grey;
+    height: 90vh;
+    margin: 0px;
+    display: grid;
+    
+    grid-template-areas:
+        "cabecalho"
+        "principal"
+        "rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    color: white;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho img {
+    background-color: white;
+}
+
+.conteudo {
+    margin-top: -30px;
+    background-color: white;
+    display: inline-block;
+    grid-area: principal;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para a imagem dentro da div */
+.conteudo img {
+    background-color: white;
+    max-width: 100%;
+}
+
+/* Estilos para o título dentro da div */
+.conteudo h2 {
+    background-color: white;
+    max-width: 525px;
+    word-wrap: break-word;
+}
+
+/* Estilos para o parágrafo dentro da div */
+.conteudo p {
+    background-color: white;
+    max-width: 525px;
+    word-wrap: break-word;
+}
+
+/* Estilos para a imagem dentro da div */
+.posts img {
+    max-width: 100%;
+}
+
+/* Estilos para o título dentro da div */
+.posts h4 {
+    max-width: 525px;
+    word-wrap: break-word;
+}
+
+/* Estilos para o contêiner de posts */
+.posts {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Estilos para cada post */
+.post1,
+.post2 {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* por as imagens com 255px de largura cada */
+
+.post1 {
+    max-width: 250px;
+    max-height: 190px;
+}
+
+.post2 {
+    max-width: 250px;
+    max-height: 190px;
+}
+
+.conteudo-rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.conteudo-rodape a {
+    color: black;
+}
+
+
+
+
+/* Estilos para telas menores (por exemplo, dispositivos móveis) */
+@media screen and (max-width: 768px) {
+    .conteudo img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    /* Estilos para o título dentro da div */
+    .conteudo h2 {
+        max-width: 300px;
+        word-wrap: break-word;
+    }
+
+    /* Estilos para o parágrafo dentro da div */
+    .conteudo p {
+        max-width: 300px;
+        word-wrap: break-word;
+    }
+}
